@@ -30,8 +30,8 @@ export default function Accordian() {
     setSelectedItems([]);
   }
 
-  console.log(enableMultiSelection);
-  console.log(selectedItems);
+  // console.log(enableMultiSelection);
+  // console.log(selectedItems);
   return (
     <div className="accordian">
       <button onClick={() => toggleEnableMultiSelection()}>
