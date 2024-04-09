@@ -41,9 +41,13 @@ export default function Accordian() {
       </button>
       {data.length === 0 && "No Data"}
       <div className="wrapper">
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
-            <div className="item" onClick={() => handleSingleClick(item.id)}>
+            <div
+              key={index}
+              className="item"
+              onClick={() => handleSingleClick(item.id)}
+            >
               <h3 className="title">{item.question}</h3>
               <span>+</span>
               {enableMultiSelection === false && selectedId === item.id && (
