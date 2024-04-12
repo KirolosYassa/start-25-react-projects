@@ -13,10 +13,10 @@ export default function StarRating({ numOfStars = 5 }) {
         return (
           <FaStar
             key={index}
+            className={index <= (rating || hoverRating) ? "active" : "inactive"}
             onClick={() => setRating(index)}
             onMouseEnter={() => setHoverRating(index)}
             onMouseLeave={() => setHoverRating(rating)}
-            className={index <= (rating || hoverRating) ? "active" : "inactive"}
           />
         );
       })}
