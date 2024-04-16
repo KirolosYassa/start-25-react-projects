@@ -11,8 +11,12 @@ function App() {
       {/* <Accordian /> */}
       {/* <Random_Color /> */}
       {/* <StarRating numOfStars={5} /> */}
-      {/* <ImageSlider /> */}
-      <TestComponent />
+      <ImageSlider
+        url={"https://picsum.photos/v2/list"}
+        limit={"5"}
+        page={"1"}
+      />
+      {/* <TestComponent /> */}
     </div>
   );
 }
